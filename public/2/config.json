@@ -1,0 +1,29 @@
+{
+    "anime_num": 0,
+    "skyColor": "#ffffff",
+    "cameraPov": 70,
+    "cameraPos": {
+        "x": 10.83742428,
+        "y": 22.14441,
+        "z": -7.93630934
+    },
+    "lightPos": {
+        "x": 0,
+        "y": 13.5,
+        "z": 0
+    },
+    "headPos": {
+        "x": 0,
+        "y": 5,
+        "z": 0
+    },
+    "fogColor": "#51BEFF",
+    "fogDensity": 0.03,
+    "snowy": true,
+    "color": "0xffffff",
+    "target": {
+        "x": -2,
+        "y": 5,
+        "z": 2
+    }
+}

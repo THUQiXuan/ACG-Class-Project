@@ -1,0 +1,27 @@
+[
+  {
+    "text": "What is the purpose of a loss function in deep learning?",
+    "options": ["To measure the difference between predicted and actual values", "To initialize the weights of the neural network", "To optimize the learning rate"],
+    "correctIndex": 0
+  },
+  {
+    "text": "Which algorithm is commonly used for optimizing weights in neural networks?",
+    "options": ["Gradient Descent", "K-means clustering", "Apriori algorithm"],
+    "correctIndex": 0
+  },
+  {
+    "text": "What is the term for a neural network's ability to generalize to unseen data?",
+    "options": ["Overfitting", "Underfitting", "Generalization"],
+    "correctIndex": 2
+  },
+  {
+    "text": "Which of the following is a common activation function in deep learning?",
+    "options": ["ReLU (Rectified Linear Unit)", "Fourier Transform", "Principal Component Analysis"],
+    "correctIndex": 0
+  },
+  {
+    "text": "What does the term 'backpropagation' refer to in deep learning?",
+    "options": ["The process of updating weights using the gradient of the loss function", "The forward pass of inputs through the network", "The initialization of network layers"],
+    "correctIndex": 0
+  }
+]

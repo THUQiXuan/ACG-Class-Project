@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+    </style>
+    <link rel="stylesheet" href="css/tree.css">
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/welcome.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+</head>
+<body>
+    <div id="main-container">
+        <div id="auth-background">
+            <div id="welcome-container" style="display: none;">
+                <h1>Dancing IIIS</h1>
+                <p> A Journey with Knowledge and Music!</p>
+                <button class="cool-button" id="start-button" >Start</button>
+            </div>
+    
+            <div class="container" id="login-container" style="display: none;">
+                <h1>Login</h1>
+                <input type="text" id="login-username" placeholder="Username">
+                <input type="password" id="login-password" placeholder="Password">
+                <button id="login-button">Login</button>
+                <p>Don't have an account? <a href="#" id="switch-to-register">Register here</a></p>
+            </div>
+        
+            <div class="container" id="register-container" style="display: none;">
+                <h2>Register</h2>
+                <input type="text" id="register-username" placeholder="Username">
+                <input type="password" id="register-password" placeholder="Password">
+                <button id="register-button">Register</button>
+                <p>Already have an account? <a href="#" id="switch-to-login">Login here</a></p>
+            </div>
+        </div>    
+        <div id="tree-container" style="display: none;">    
+            <section class="slideshow">
+                <ul class="navigation"></ul>
+                <div class="detail"></div>
+                <div id="user-stats">
+                </div>
+                
+            </section>
+            <button class="cool-button" id="logout-button">Logout</button>
+            <button class="cool-button" id="user-manual-button" style="bottom: 50px">User Manual</button>
+        </div>
+        <div id="user-manual-container" style="display: none;">
+            <div id="user-manual">
+                <h3 style="text-align: center;">TL;DR</h3>
+                <p style="text-indent: 2em;">
+                    Press <img src="assets/img/enter.png" alt="Enter" class="key-icon"> to start a game. In maze levels, navigate with <img src="assets/img/keyboard-arrows.png" alt="Enter" class="key-icon">. In music levels, tap <img src="assets/img/space.png" alt="Enter" class="key-icon"> in sync with the rhythm. Collect diamonds to earn a better grade.
+                </p>
+                <hr>
+                <h3 style="text-align: center;">Welcome to the Adventure of Knowledge and Music</h3>
+                <p> 
+                    Embark on a journey filled with challenges and rewards in our dual-mode game, where you'll navigate through mazes and keep the rhythm in music levels. Here's how to master each mode:
+                </p>
+                <h4>Maze Levels</h4>
+                <p style="text-indent: 2em;">
+                    Navigate with <strong>Arrow Keys</strong> : guide your character through the labyrinthine paths.
+                </p>
+                <p style="text-indent: 2em;">
+                        Solve Questions:  Each maze holds 4 questions. Answer it correctly to collect the <strong> diamond</strong> attached to it.
+                </p>
+                <h4>Music Levels</h4>
+                <p style="text-indent: 2em;">
+                    Feel the Beat: Tap the <strong>Space bar</strong> in sync with the rhythm to maneuver the line and avoid obstacles. Timing is key!
+                </p>
+                <p style="text-indent: 2em;">
+                    Stay on Track: Keep your focus and rhythm to navigate through the level successfully. The more <strong>precise</strong> you are, higher the probability of earning a <strong>diamond</strong>.
+                </p>
+
+                <h4> Rewards and Progress</h4>
+                <p style="text-indent: 2em;">
+                    Diamonds Await: Collect diamonds scattered throughout the levels to earn a better grade. You will be awarded the diamonds you've collected only the <strong>first time</strong> you pass a level, just like taking a course in college.
+                </p>
+                <p style="text-indent: 2em;">
+                    Revisit and Refine: Feel free to replay previous levels anytime. Although it's irrelavant to your score, the adventure is yours to enjoy.
+                </p>
+            </div>
+        </div>
+        <div class="container" id="game-holder">
+            <div id="gameover-container" style="display: none;">
+                <div id="gameover-title">Game Over</div>
+                <div id="gameover-grade">A</div>
+                <div id="diamond-container" style="display: none;">
+                </div>
+                <button id="gameover-continue">Continue </div>
+            <div id="character-container" style="display: none;">
+
+                <div id="appearance-selection" > </div>
+                <div id="special-effects">
+                    <button class="effect-button" id="headphone-button">Head Phone</button>
+                    <button class="effect-button" id="hat-button">Hat</button>
+                    <button class="effect-button" id="flash-button">Turn Flash</button>
+                    <button class="effect-button" id="note-button">Turn Note</button>
+                </div>
+                <button id="apply-button">Apply</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="src/main.ts"></script>
+    <script src="https://code.5g-o.com/wp-content/uploads/2020/04/google-jquery-2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/TextPlugin.min.js"></script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        body {
+            /* 设置背景为动图 */
+            background-image: url('background.gif');
+            background-size: cover; /* 让背景图覆盖整个页面 */
+            background-repeat: no-repeat; /* 不重复背景图 */
+            background-position: center; /* 背景图居中 */
+            height: 100vh; /* 确保背景覆盖整个视口高度 */
+            margin: 0; /* 移除默认的页面边距 */
+        }
+    </style>
+    <link rel="stylesheet" href="css/tree.css">
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+</head>
+<body>
+    <div id="main-container">
+        <div id="auth-background">
+            <div class="container" id="login-container" style="display: none;">
+                <h1>Login</h1>
+                <input type="text" id="login-username" placeholder="Username">
+                <input type="password" id="login-password" placeholder="Password">
+                <button id="login-button">Login</button>
+                <p>Don't have an account? <a href="#" id="switch-to-register">Register here</a></p>
+            </div>
+        
+            <div class="container" id="register-container" style="display: none;">
+                <h2>Register</h2>
+                <input type="text" id="register-username" placeholder="Username">
+                <input type="password" id="register-password" placeholder="Password">
+                <button id="register-button">Register</button>
+                <p>Already have an account? <a href="#" id="switch-to-login">Login here</a></p>
+            </div>
+        </div>    
+        <div id="tree-container" style="display: none;">
+            <section class="slideshow">
+                <ul class="navigation"></ul>
+                <div class="detail"></div>
+              </section>
+        </div>
+        <div id="user-manual-container" style="display: none;">
+            <div id="user-manual">
+                <h1>User Manual</h1>
+                <p>Use the arrow keys to move the character</p>
+                <p>Collect the coins to increase your score</p>
+                <p>Collect the hearts to increase your health</p>
+                <p>Collect the keys to unlock the door</p>
+                <p>Unlock the door to complete the level</p>
+            </div>
+            <button id="user-manual-close-button" class="cool-button">Close</button>
+        </div>
+        <div class="container" id="game-holder">
+            <div id="gameover-container" style="display: none;">
+                <div id="gameover-title">Game Over</div>
+                <div id="gameover-grade">A</div>
+                <button id="gameover-continue">Continue</button>
+            </div>
+            <div id="character-container" style="display: none;">
+                <div id="appearance-selection"></div>
+                <div id="special-effects">
+                    <button class="effect-button" id="headphone-button">Head Phone</button>
+                    <button class="effect-button" id="hat-button">Hat</button>
+                    <button class="effect-button" id="flash-button">Turn Flash</button>
+                    <button class="effect-button" id="note-button">Turn Note</button>
+                </div>
+                <button id="apply-button">Apply</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="src/main.ts"></script>
+    <script src="https://code.5g-o.com/wp-content/uploads/2020/04/google-jquery-2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/TextPlugin.min.js"></script>
+</body>
+</html> -->

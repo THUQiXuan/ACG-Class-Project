@@ -1,0 +1,28 @@
+[
+    {
+      "text": "What is the derivative of f(x) = x^2?",
+      "options": ["2x", "x^3", "1"],
+      "correctIndex": 0
+    },
+    {
+      "text": "Evaluate the integral ∫x dx:",
+      "options": ["x^2/2 + C", "x^2 + C", "ln|x| + C"],
+      "correctIndex": 0
+    },
+    {
+      "text": "Find the limit as x → 0 of sin(x)/x:",
+      "options": ["0", "1", "∞"],
+      "correctIndex": 1
+    },
+    {
+      "text": "If f(x) = e^x, what is f'(x)?",
+      "options": ["e^x", "xe^(x-1)", "e^(x+1)"],
+      "correctIndex": 0
+    },
+    {
+      "text": "What is the second derivative of f(x) = x^3?",
+      "options": ["6x", "3x^2", "2x"],
+      "correctIndex": 0
+    }
+  ]
+  

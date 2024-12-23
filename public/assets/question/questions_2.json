@@ -1,0 +1,27 @@
+[
+  {
+    "text": "What is the determinant of a 2x2 matrix A = [[a, b], [c, d]]?",
+    "options": ["ad - bc", "ab + cd", "a + d"],
+    "correctIndex": 0
+  },
+  {
+    "text": "If v = [2, 3] and u = [1, 4], find the dot product v · u:",
+    "options": ["14", "11", "12"],
+    "correctIndex": 0
+  },
+  {
+    "text": "What is the rank of a zero matrix of size 3x3?",
+    "options": ["0", "1", "3"],
+    "correctIndex": 0
+  },
+  {
+    "text": "What is the inverse of the identity matrix I?",
+    "options": ["I", "0", "I^2"],
+    "correctIndex": 0
+  },
+  {
+    "text": "If A is a square matrix, when is A invertible?",
+    "options": ["When det(A) ≠ 0", "When det(A) = 0", "Always"],
+    "correctIndex": 0
+  }
+]

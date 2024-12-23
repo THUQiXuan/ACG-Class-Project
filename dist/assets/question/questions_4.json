@@ -1,0 +1,27 @@
+[
+  {
+    "text": "What is the formula for the gravitational force between two masses m1 and m2 separated by a distance r?",
+    "options": ["Gm1m2/r^2", "Gm1m2/r", "Gm1m2*r^2"],
+    "correctIndex": 0
+  },
+  {
+    "text": "If a body is moving with constant velocity, what is the net force acting on it?",
+    "options": ["0", "Equal to its mass", "Proportional to its velocity"],
+    "correctIndex": 0
+  },
+  {
+    "text": "What is the work done on an object if it is displaced by a distance d in the direction of a force F?",
+    "options": ["F · d", "F/d", "F + d"],
+    "correctIndex": 0
+  },
+  {
+    "text": "What is the SI unit of electric charge?",
+    "options": ["Coulomb (C)", "Joule (J)", "Newton (N)"],
+    "correctIndex": 0
+  },
+  {
+    "text": "If a wave has a frequency f and wavelength λ, what is its speed v?",
+    "options": ["v = fλ", "v = f/λ", "v = λ/f"],
+    "correctIndex": 0
+  }
+]

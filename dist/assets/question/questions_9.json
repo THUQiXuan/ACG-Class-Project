@@ -1,0 +1,27 @@
+[
+  {
+    "text": "What is the purpose of a transformation matrix in computer graphics?",
+    "options": ["To manipulate the position, scale, or orientation of objects", "To store color information", "To perform collision detection"],
+    "correctIndex": 0
+  },
+  {
+    "text": "Which algorithm is commonly used for visible surface detection?",
+    "options": ["Z-buffer algorithm", "Bresenham's line algorithm", "Dijkstra's algorithm"],
+    "correctIndex": 0
+  },
+  {
+    "text": "What is the term for the process of converting 3D coordinates to 2D screen coordinates?",
+    "options": ["Projection", "Rasterization", "Shading"],
+    "correctIndex": 0
+  },
+  {
+    "text": "Which of the following is a common shading technique in computer graphics?",
+    "options": ["Phong shading", "Gaussian blur", "Breadth-first search"],
+    "correctIndex": 0
+  },
+  {
+    "text": "What does the term 'rasterization' refer to in computer graphics?",
+    "options": ["Converting vector data to pixel data", "Generating 3D models", "Storing textures"],
+    "correctIndex": 0
+  }
+]

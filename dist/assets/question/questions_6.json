@@ -1,0 +1,27 @@
+[
+  {
+    "text": "What is the purpose of a loss function in machine learning?",
+    "options": ["To measure the error of a model", "To split the dataset", "To train the model"],
+    "correctIndex": 0
+  },
+  {
+    "text": "What is overfitting in a machine learning model?",
+    "options": ["When the model performs well on training data but poorly on test data", "When the model performs well on both training and test data", "When the model performs poorly on training data"],
+    "correctIndex": 0
+  },
+  {
+    "text": "Which of the following is an example of supervised learning?",
+    "options": ["Linear regression", "Clustering", "Dimensionality reduction"],
+    "correctIndex": 0
+  },
+  {
+    "text": "What is the purpose of gradient descent in machine learning?",
+    "options": ["To minimize the loss function", "To split data into training and test sets", "To improve model accuracy"],
+    "correctIndex": 0
+  },
+  {
+    "text": "Which of the following is a common activation function in neural networks?",
+    "options": ["ReLU", "Mean Squared Error", "Cross-Entropy"],
+    "correctIndex": 0
+  }
+]

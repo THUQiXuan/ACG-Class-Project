@@ -1,0 +1,76 @@
+[
+    {
+        "name": "Calculus",
+        "id": 0,
+        "children": [1],
+        "father": [],
+        "game_type": "maze",
+        "num_dia": 4
+    },
+    {
+        "name": "Linear Algebra",
+        "id": 1,
+        "children": [2],
+        "father": [0],
+        "game_type": "maze",
+        "num_dia": 4
+    },
+    {
+        "name": "ThemeI: Winter",
+        "id": 2,
+        "children": [3, 4],
+        "father": [1],
+        "game_type": "music",
+        "num_dia": 5
+    },
+    {
+        "name": "General Physics",
+        "id": 3,
+        "children": [5],
+        "father": [2],
+        "game_type": "maze",
+        "num_dia": 4
+    },
+    {
+        "name": "Machine Learning",
+        "id": 4,
+        "children": [5],
+        "father": [2],
+        "game_type": "maze",
+        "num_dia": 4
+    },
+    {
+        "name": "ThemeII: Spring",
+        "id": 5,
+        "children": [6, 7],
+        "father": [3, 4],
+        "game_type": "music",
+        "num_dia": 5
+    },
+    {
+        "name": "Deep Learning",
+        "id": 6,
+        "children": [8],
+        "father": [5],
+        "game_type": "maze",
+        "num_dia": 4
+    },
+    
+    {
+        "name": "Advanced Computer Graphics",
+        "id": 7,
+        "children": [8],
+        "father": [5],
+        "game_type": "maze",
+        "num_dia": 4
+    },
+    {
+        "name": "ThemeIII: Youth",
+        "id": 8,
+        "children": [],
+        "father": [6, 7],
+        "game_type": "music",
+        "num_dia": 6
+    }
+
+]
